@@ -1,0 +1,32 @@
+﻿@model EmployeeProject.Models.AddEmployeeViewModel
+@{
+}
+<h1 class="my-2">Add Employee</h1>
+<form method="post" action="Add">
+    <div class="form-group">
+    <label for="" class="form-label">Name</label>
+    <input type="text" class="form-control" asp-for="Name">
+    @*<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>*@
+    </div>
+    <div class="form-group">
+        <label for="" class="form-label">Email Address</label>
+        <input type="email" class="form-control" asp-for="Email">
+        @*<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>*@
+    </div>
+    <div class="form-group">
+          <label for="" class="form-label">Salary</label>
+        <input type="number" class="form-control" asp-for="Salary">
+        @*<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>*@
+    </div>
+    <div class="form-group">
+            <label for="" class="form-label">Date of Birth</label>
+        <input type="date" class="form-control" asp-for="DateofBirth">
+        @*<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>*@
+    </div>
+    <div class="form-group">
+              <label for="" class="form-label">Department</label>
+        <input type="text" class="form-control" asp-for="Department">
+        @*<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>*@
+    </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
