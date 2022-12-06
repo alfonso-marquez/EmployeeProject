@@ -8,7 +8,7 @@
     <thead>
         <tr>
             <th>Id</th>
-            <th>Name</th>
+            <th>Name</th>   
             <th>Email</th>
             <th>Salary</th>
             <th>Date of Birth</th>
@@ -32,3 +32,10 @@
     </tbodyh>
 
 </table>
+<form method="post" class="mt-4">
+    <button type="submit" class="mx-2 btn btn-primary"
+            asp-action="Excel"
+            asp-controller="Employees">
+        Export to Excel
+    </button>
+</form>
